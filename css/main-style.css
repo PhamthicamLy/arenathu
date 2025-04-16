@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* CSS Document */
+*{ box-sizing: border-box}
+body
+{  
+background-color:#F3F0DA;
+color: #000000;
+font-family: 	Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+font-size:  16px;
+
+	
+	
+}
+h1,h3
+{
+font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"	;	
+color: #FF0000}
+h2{
+ color: #E634EB
+	
+}
+
+a{ text-decoration: none}
+
+ul li
+{
+	<!--list-style-image: url("file:///D:/ly/img/icon/add_circle_16dp_1F1F1F_FILL0_wght400_GRAD0_opsz20.png")-->
+	
+}
+
+
+
+
+.col-1{width: 8.33%}
+.col-2{width: 16.66}
+.col-3{width: 25%}
+.col-4{width: 33,33%}
+.col-5{width: 41,65%}
+.col-6{width: 50%}
+.col-7 { width:  58.33%}
+.col-8 { width:  66.66%}
+.col-9 { width: 75%}
+.col-10 { width:  83.33%}
+.col-11 { width:  91.66%}
+.col-12 { width: 100%}
+@media(min-width: 600px)
+{
+	.col-md-1 { width: 8.33%}
+	.col-md-2 { width: 16.66%}
+	.col-md-3 { width: 25%}
+	.col-md-4 { width: 33.33%}
+	.col-md-5 { width:  41.66%}
+	.col-md-6 { width:  50%}
+	.col-md-7 { width:  58.33%}
+	.col-md-8 { width:  66.66%}
+	.col-md-9 { width: 75%}
+	.col-md-10 { width:  83.33%}
+	.col-md-11 { width:  91.66%}
+	.col-md-12 { width: 100%}
+}
+@media (min-width:1000px)
+{
+	.col-lg-1 { width: 8.33%}
+	.col-lg-2 { width: 16.66%}
+	.col-lg-3 { width: 25%}
+	.col-lg-4 { width: 33.33%}
+	.col-lg-5 { width:  41.66%}
+	.col-lg-6 { width:  50%}
+	.col-lg-7 { width:  58.33%}
+	.col-lg-8 { width:  66.66%}
+	.col-lg-9 { width: 75%}
+	.col-lg-10 { width:  83.33%}
+	.col-lg-11 { width:  91.66%}
+	.col-lg-12 { width: 100%}
+}
+
+
+
+
+
+[class*="col-"]
+{
+	padding: 15px;
+	border: 1px solid red
+}
+
+.vien{ border:dashed red 1px}
+
+.row{
+	display: flex;
+	flex-wrap: wrap
+}
+.img-100{ width: 100%; height: auto}
+/*dieu khien container tuy theo thiet bi (phone/ ipad/pc)*/
+.container
+{
+	width: 100%;
+	margin: auto/* khien cho box 80% nay vao giua*/;
+}
+@media (min-width: 600px)
+{
+	.container	{		width: 90%;		
+	}
+}
+@media (min-width: 1000px)
+{
+	.container	{		width: 80%;	
+	}
+}
+/*-- guideline cho text color*/
+.text-primary { color: tomato}
+.text-secondary{ color: #074257}
+.text-dark{ color: #353535}
+.text-light{ color: #E4E4E4}
+a.text-primary:hover{
+	color: #074257
+}
+a.text-secondary:hover{
+	color: tomato
+}
+
+/* style mau nen background*/
+.bg-primary{ background-color: #25BD9A}
+.bg-secondary{ background-color:#074257}
+.bg-light{background-color:#E4E4E4}
+.bg-dark{background-color:#353535}
+
+/*----gióng text----*/
+.text-center{text-align:center }
+.text-right{text-align: right}
+.text-justify{text-align: justify}
+.text-left{ text-align: left}
+/*-----------------------------------------*/
+
+
+.overlay
+{
+width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	position: fixed; /*khoa box 100% cao rong tai vi tri left top = 0*/
+	left: 0; top: 0;
+	z-index: 1
+}
+.quangcao
+{
+ position: fixed;
+width: 50%;
+	height: 80%;
+	left: 25%;
+	top: 10%;
+	background: #fff;
+	box-shadow: 0 0 50px #cc0;
+	z-index: 2/*so cang lon cang o tren*/
+}
+.btn-close
+{
+position: absolute;
+	right: 0;
+	top: 0;
+	background-color:  rgba(35,207,44,1.00);
+	padding: none;
+	cursor: pointer
+	
+	
+}
+
+#topbar i{margin-left: 20px}
+#topbar a:hover{color: tomato}
+#topbar{display: none}
+/*ẩn topbar tại ip và ipad---tới khi bật lên*/
+@media(min-width: 1000px){
+	#topbar{display: block}
+	
+}
+	/*--bđ style cho nav menu*/
+nav img.logo{width: 150px}
+nav .container{position: relative}
+nav .btn-toggle
+{
+	position: absolute; right: 5px; top: 5px;
+	background: #fff; border: none;
+cursor: pointer;
+	padding: 5px 10px
+}
+nav ul
+{
+	list-style: none;
+	margin: 10px;
+	padding: 0
+}
+nav ul li{position: relative}
+nav ul li a
+{
+	color: white;
+	display: block;
+	border-bottom: 1px solid #ddd;
+	padding: 10px
+}
+nav ul li a:hover
+{
+	background-color: rgba(227,180,181,1.00)
+	
+}
+#menu{display: none}
+@media (min-width:1000px)
+{
+	nav ul{display: flex}
+	.btn-toggle{display: none}
+	nav .container{display: flex;
+		align-items: flex-end;
+		justify-content: space-between
+	
+	}
+	nav ul li a{ border-bottom: none}
+	#menu{display: block!important}/*bat buoc phai hien thi khi lon hon 1000px*/
+}
+	
